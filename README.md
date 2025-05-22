@@ -15,7 +15,8 @@ This is the Odin Project's Rock Paper Scissors assignment.
         (used simple prompt)
 
     Compare the two choices to determine the winner
-        (i used a bunch of if statements, in my eyes its ugly and thers probably something better, <br> but at the same time this is such a small program that it hardly matters)
+        (i used a bunch of if statements, in my eyes it's ugly and there's probably something better,  
+        but at the same time this is such a small program that it hardly matters)
 
     Increase winners score
 
