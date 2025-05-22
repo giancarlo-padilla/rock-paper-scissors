@@ -2,7 +2,7 @@
 
 This is the Odin Project's Rock Paper Scissors assignment.
 
-## Psuedocode:
+## Pseudocode:
 
     Create two variables
         - humanScore is 0
