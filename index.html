@@ -7,11 +7,10 @@
     <script>
         let humanScore = 0;
         let machineScore = 0;
-        let rock = 0;
-        let paper = 0;
-        let scissors = 0;
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
 
-        function getHumanInput() {
+        function getHumanChoice() {
             return prompt("Choose Rock, Paper, or Scissors", "");
         }
 
@@ -22,11 +21,29 @@
                     return "rock";
                 case 1:
                     return "paper";
-
                 case 2:
                     return "scissors";
             }
         }
+
+        function playRound(humanChoice, computerChoice) {
+            if (humanChoice == computerChoice) {
+                console.log("Tie");
+            } else if (humanChoice == "rock" && computerChoice == "scissors") {
+            console.log("Rock beats scissors, you win");
+            } else if (humanChoice == "rock" && computerChoice == "paper") {
+                console.log("Paper beats rock, you lose");
+            } else if (humanChoice == "paper" && computerChoice == "rock") {
+                console.log("Paper beats rock, you win");
+            } else if (humanChoice == "paper" && computerChoice == "scissors") {
+                console.log("Scissors beats paper, you lose");
+            } else if (humanChoice == "scissors" && computerChoice == "rock") {
+                console.log("Rock beats scissors, you lose");
+            } else if (humanChoice == "scissors" && computerChoice == "paper") {
+                console.log("Scissors beats paper, you win");
+            }
+            }
+            playRound(humanChoice, computerChoice);
     </script>
 </head>
 <body>
